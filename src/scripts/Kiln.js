@@ -1,5 +1,5 @@
 export const firePottery = (potteryObject, temperature) => {
-  
+  debugger
     potteryObject.fired = true
 
     if (temperature > 2200) {

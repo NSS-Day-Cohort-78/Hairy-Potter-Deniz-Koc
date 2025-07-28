@@ -2,6 +2,7 @@
 import { makePottery } from "./PotteryWheel.js"
 import { firePottery } from "./Kiln.js"
 import { toSellOrNotToSell } from "./PotteryCatalog.js"
+import { PotteryList } from "./PotteryList.js"
 
 // Make 5 pieces of pottery at the wheel
 let mug = makePottery("Mug", 2, 4)
@@ -25,7 +26,8 @@ vase = toSellOrNotToSell(vase)
 pitcher = toSellOrNotToSell(pitcher)
 
 // Invoke the component function that renders the HTML list
-
+const potteryHTML = PotteryList()
+document.querySelector(".potteryList").innerHTML = potteryHTML
 
 
 console.log(mug)
